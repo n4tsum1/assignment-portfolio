@@ -1,0 +1,258 @@
+CSS BACKUP
+
+
+/**********************************
+GENERAL
+***********************************/
+
+* {
+    box-sizing: border-box;
+}
+
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/*margin*/
+/**********************************
+  BODY
+**********************************/
+  body{
+      padding: 20px;
+      color: #999999;
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-left: 10%;
+      margin-right: 10%;
+      
+}
+
+/**********************************
+  HEADER
+**********************************/
+
+
+header {
+    display: block;
+    text-align: center;
+
+}
+
+.circular {
+    border-radius: 50%;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    display: inline-block;
+}
+
+/*navigation*/
+nav li {
+    float: left;
+}
+
+nav a {
+    display: block;
+    color: grey;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover:not(.active) {
+    background-color: whitesmoke;
+}
+
+/*hover over effect*/
+
+.active {
+    background-color: #4CAF50;
+}
+
+.subheader {
+    display: block;
+    text-align: center;
+
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+
+.page-divider {
+    border-bottom: 1px solid #ddd;
+}
+
+
+
+/*works section style */
+
+/*image grid*/
+
+.column-w {
+    vertical-align: top;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 32%;
+    padding: 10px;
+}
+
+.column-w a {
+    position: relative;
+    display: block;
+    margin-top: 12px;
+}
+
+.column-w a .caption {
+    transition: 0.2s all linear;
+    box-sizing: border-box;
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    opacity: 0;
+    text-align: center;
+}
+
+.column-w a .caption p {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    margin: 0;
+}
+
+.column a:hover .caption {
+    opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.display-hover {}
+
+.overlay-hover {}
+
+/*
+
+.gallary {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-right: 10%;
+    margin-left: 10%;
+    width: 100%;
+
+}
+*/
+
+.gallary img {
+    max-width: 100%
+}
+
+
+footer {
+    text-align: center;
+    background-color: darkslategray;
+    color: white;
+    position: relative;
+    bottom: 0px;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    width: 100%;
+    height: 20px;
+
+}
+
+/*
+
+footer h6{
+   padding-top: 2em;
+}
+*/
+
+
+/*Contact section style*/
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Style the container/contact section */
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column-f {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row-f:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+
+    .column,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
